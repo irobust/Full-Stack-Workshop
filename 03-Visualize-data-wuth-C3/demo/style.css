@@ -1,0 +1,32 @@
+.main-content{
+    padding: 50px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.graph-hidden{
+    display: none;
+}
+
+#timeLine .c3-line-none{
+    stroke-width: 5px;
+}
+
+#timeLine .c3-line-yes{
+    stroke-width: 25px;
+}
+
+#timeLine .c3-line-no{
+    stroke-width: 15px;
+}
+
+#timeLine .c3-axis-y{
+    fill: red;
+    /* font-size: 20px; */
+}
+
+#timeLine .c3-axis-x{
+    fill: blue;
+}
