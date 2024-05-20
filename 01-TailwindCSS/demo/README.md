@@ -8,6 +8,7 @@
 1. Install Tailwind
     ```
     npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init
     ```
 
 1. Add Tailwind to your PostCSS configuration(postcss.config.js)
