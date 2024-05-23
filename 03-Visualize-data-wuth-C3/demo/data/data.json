@@ -1,0 +1,6 @@
+{
+    "label": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+    "yes": [30, 200, 100, 400, 150, 250,44,22,33,11, 30, 150],
+    "no": [50, 220, 109, 430, 135, 245,11,22,33,44, 50, 150],
+    "none" :[42, 162, 81, 329, 121, 212,14,24,34,44, 42, 150]
+  }

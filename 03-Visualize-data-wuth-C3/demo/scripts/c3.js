@@ -27,6 +27,38 @@ var timeLineChart = c3.generate({
     }
 });
 
+setTimeout(() => {
+    timeLineChart.data.colors({'yes':'blue','no':'red'});
+    timeLineChart.transform('line',['yes','no'])
+},2000)
+
+// setTimeout(() => {
+//     c3.generate({
+//         bindto: "#timeLine",
+//         data: {
+//             url:'../data/data.json',
+//             mimeType: 'json',
+//             x: 'label',
+//             types: {
+//                 'yes':'bar',
+//                 'no':'bar',
+//                 'none':'line'
+//             }
+//         },
+//         axis:{
+//             x:{
+//                 type:'category'
+//             },
+//             y:{
+//                 label:{
+//                     text:'Nr. users',
+//                     position:'outer-middle'
+//                 }
+//             }
+//         }
+//     });
+// }, 2000);
+
 var summary = c3.generate({
     bindto:'#summaryPie',
     data:{
@@ -35,10 +67,26 @@ var summary = c3.generate({
             ['no', 120],
             ['none', 35]
         ],
-        type: 'pie'
+        type: 'pie',
+        onmouseover: function(d) {console.log('OnMouseOver')},
+        onmouseout:function(d){console.log("out")}
     },
     size:{
         width: 500,
         height: 500
     }
-})
+});
+
+// setTimeout(() => {
+//     c3.generate({
+//         bindto:'#summaryPie',
+//         data:{
+//             url:'../data/data.csv',
+//             type: 'pie'
+//         },
+//         size:{
+//             width: 500,
+//             height: 500
+//         }
+//     });
+// }, 3000)
